@@ -167,6 +167,63 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Price Table Section */}
+      <section id="price" className="py-20 md:py-32 px-6">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 text-balance">
+            料金表
+          </h2>
+          <p className="text-center text-sm text-[#0B1220]/50 mb-12">
+            全て税込 ／ 現金払い
+          </p>
+          <div className="rounded-2xl border border-[#0B1220]/10 overflow-hidden">
+            <table className="w-full text-sm md:text-base">
+              <thead>
+                <tr className="bg-[#0B1220] text-white">
+                  <th className="py-3 px-5 text-left font-semibold">メニュー</th>
+                  <th className="py-3 px-4 text-center font-semibold">時間</th>
+                  <th className="py-3 px-5 text-right font-semibold">料金</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-[#0B1220]/10 bg-white hover:bg-[#0EA5E9]/5 transition-colors">
+                  <td className="py-4 px-5 font-medium">Head 45</td>
+                  <td className="py-4 px-4 text-center text-[#0B1220]/60">45分</td>
+                  <td className="py-4 px-5 text-right font-bold text-lg">¥4,500</td>
+                </tr>
+                <tr className="border-b border-[#0B1220]/10 bg-[#0EA5E9]/5">
+                  <td className="py-4 px-5 font-semibold">
+                    <span className="inline-block mr-2 px-2 py-0.5 bg-[#0EA5E9] text-white text-xs rounded-full">人気</span>
+                    Oil 60
+                  </td>
+                  <td className="py-4 px-4 text-center text-[#0B1220]/60">60分</td>
+                  <td className="py-4 px-5 text-right font-bold text-lg">¥6,500</td>
+                </tr>
+                <tr className="border-b border-[#0B1220]/10 bg-white hover:bg-[#0EA5E9]/5 transition-colors">
+                  <td className="py-4 px-5 font-medium">Head + Reflex 90</td>
+                  <td className="py-4 px-4 text-center text-[#0B1220]/60">90分</td>
+                  <td className="py-4 px-5 text-right font-bold text-lg">¥8,500</td>
+                </tr>
+                <tr className="bg-[#0B1220]/3 hover:bg-[#0EA5E9]/5 transition-colors">
+                  <td className="py-3 px-5 text-[#0B1220]/60 text-sm">延長 10分</td>
+                  <td className="py-3 px-4 text-center text-[#0B1220]/40 text-sm">+10分</td>
+                  <td className="py-3 px-5 text-right font-semibold text-[#0B1220]/70">¥1,500</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-8 text-center">
+            <Button
+              id="cta-price"
+              className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white px-10 py-6 text-base rounded-full"
+              asChild
+            >
+              <a href="#book">今すぐ予約する</a>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Reviews Section */}
       <section id="reviews" className="py-20 md:py-32 px-6">
         <div className="max-w-5xl mx-auto">
